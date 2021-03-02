@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Technical documentation page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+<nav id="navbar">
+    <header>C Documentation</header><ul id="nav">
+    <li><a class="nav-link" href="#Datatypes">Datatypes</a></li>
+    <li><a class="nav-link" href="#Variables">Variables</a></li>
+    <li><a class="nav-link" href="#If-else_statements">If-else statements</a></li>
+      <li><a class="nav-link"  href="#Arrays">Arrays</a></li>
+    <li><a class="nav-link"  href="#Structures">Structures</a></li>
+    </ul>
+    </nav>
+<main id="main-doc">
+
+  <div id="container">
+<section class="main-section" id="Datatypes">
+  <header>Datatypes</header>
+  <p>The data-type in a programming language is the collection of data with values having fixed meaning as well as characteristics. Example: integer, floating point, character, etc.</p>
+  <h2>Types</h2>
+<ul>
+  <li>Primary(Built-in) Data Types</li>
+   <li>Derived Data Types:
+</li>
+   <li>User Defined Data Types</li>
+  </ul>
+  <p><strong>Primary(Built-in) Data Types</strong> include void, integer, character, long decimal(double) and float(decimal).<br><strong>Derived Data Types</strong> include Array, References, and Pointers<br><strong>User Defined Data Types</strong> include Structure, Union, and Enumeration</p>
+  <code>Here's how to declare built-in datatype using c<br><br>int;<br>float;<br>char;<br>char[200]//string<br></code>
+</section>
+<section class="main-section" id="Variables">
+  <header>Variables</header>
+  <p>The primary purpose of variables is to store data in memory for later use. When you declare a variable in C, that means you are asking the operating system to reserve a piece of memory with that variable name.<br><strong> Some Rules are as follows:</strong>
+  <ul><li>A variable name can consist of Capital letters A-Z, lowercase letters a-z, digits 0-9, and the underscore character.</li>
+    <li>The first character must be a letter or underscore</li>
+    <li>Blank spaces cannot be used in variable names.</li>
+    <li>Special characters like #, $ are not allowed.</li>
+  </ul></p>
+  <p>syntax</p>
+  <code>type variable_name;</code>
+</section>
+<section class="main-section" id="If-else_statements">
+  <header>If-else statements</header>
+  <p>If-else statements in C is also used to control the program flow based on some condition, only the difference is: it's used to execute some statement code block if the expression is evaluated to true, otherwise executes else statement code block.</p>
+  <h2>Important</h2>
+  <ul><li>If -else statements can be nested</li>
+    <li>Only if has a condition and not the else part.</li>
+  </ul>
+  <code>// Program to display a number if it is negative
+
+#include <stdio.h><br>
+int main() {<br>
+    int number;<br>
+
+    printf("Enter an integer: ");<br>
+    scanf("%d", &number);<br>
+
+    // true if number is less than 0<br>
+    if (number < 0) {<br>
+        printf("You entered %d.\n", number);<br>
+    }<br>
+
+    printf("The if statement is easy.");<br>
+
+    return 0;<br>
+}<br>
+                   </code>
+  <p>When the user enters 5, the test expression number is less than zero so it is evaluated to false and the statement inside the body of if is not executed</p>
+</section>
+<section class="main-section" id="Arrays">
+  <header>Arrays</header>
+  <p>An array is a variable that can store multiple values. For example, if you want to store 100 integers, you can create an array for it.</p><h2>Key notes</h2>
+  <ul><li>Arrays have 0 as the first index, not 1.</li><li>If the size of an array is n, to access the last element, the n-1 index is used.</li></ul>
+  <p>Declaration of an array</p>
+  <code>dataType arrayName[arraySize];</code><br>
+  
+</section>
+<section class="main-section" id="Structures">
+  <header>Structures</header>
+  <p>In C programming, a struct (or structure) is a collection of variables (can be of different types) under a single name.</p><h2>Access members of a structure</h2><p>There are two types of operators used for accessing members of a structure.<br><br>Example<br><code>person.salary</code></p>
+  <ul><li>. - Member operator</li><li>-> - Structure pointer operator </li></ul>
+  <p>Syntax</p>
+  <code>struct structureName <br>
+{<br>
+    dataType member1;<br>
+    dataType member2;<br>
+    ...<br>
+};<br></code>
+  <p>Information on this site regarding C language was taken from <a href="https://www.w3schools.in/c-tutorial/">W3 schools</a> and <a href="https://www.programiz.com/c-programming">programmiz</a></p>
+</section>
+  </div>
+
+  
+</main>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
